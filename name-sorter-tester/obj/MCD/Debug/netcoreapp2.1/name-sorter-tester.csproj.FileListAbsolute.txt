@@ -1,0 +1,17 @@
+C:\Users\Tommy\Documents\name-sorter\name-sorter-tester\bin\MCD\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Tommy\Documents\name-sorter\name-sorter-tester\bin\MCD\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Tommy\Documents\name-sorter\name-sorter-tester\bin\MCD\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Tommy\Documents\name-sorter\name-sorter-tester\bin\MCD\Debug\netcoreapp2.1\name-sorter-tester.deps.json
+C:\Users\Tommy\Documents\name-sorter\name-sorter-tester\bin\MCD\Debug\netcoreapp2.1\name-sorter-tester.runtimeconfig.json
+C:\Users\Tommy\Documents\name-sorter\name-sorter-tester\bin\MCD\Debug\netcoreapp2.1\name-sorter-tester.runtimeconfig.dev.json
+C:\Users\Tommy\Documents\name-sorter\name-sorter-tester\bin\MCD\Debug\netcoreapp2.1\name-sorter-tester.dll
+C:\Users\Tommy\Documents\name-sorter\name-sorter-tester\bin\MCD\Debug\netcoreapp2.1\name-sorter-tester.pdb
+C:\Users\Tommy\Documents\name-sorter\name-sorter-tester\obj\MCD\Debug\netcoreapp2.1\name-sorter-tester.csprojAssemblyReference.cache
+C:\Users\Tommy\Documents\name-sorter\name-sorter-tester\obj\MCD\Debug\netcoreapp2.1\name-sorter-tester.csproj.CoreCompileInputs.cache
+C:\Users\Tommy\Documents\name-sorter\name-sorter-tester\obj\MCD\Debug\netcoreapp2.1\name-sorter-tester.AssemblyInfoInputs.cache
+C:\Users\Tommy\Documents\name-sorter\name-sorter-tester\obj\MCD\Debug\netcoreapp2.1\name-sorter-tester.AssemblyInfo.cs
+C:\Users\Tommy\Documents\name-sorter\name-sorter-tester\obj\MCD\Debug\netcoreapp2.1\name-sorter-tester.dll
+C:\Users\Tommy\Documents\name-sorter\name-sorter-tester\obj\MCD\Debug\netcoreapp2.1\name-sorter-tester.pdb
+C:\Users\Tommy\Documents\name-sorter\name-sorter-tester\bin\MCD\Debug\netcoreapp2.1\name-sorter.dll
+C:\Users\Tommy\Documents\name-sorter\name-sorter-tester\bin\MCD\Debug\netcoreapp2.1\name-sorter.pdb
+C:\Users\Tommy\Documents\name-sorter\name-sorter-tester\obj\MCD\Debug\netcoreapp2.1\name-sorter-tester.csproj.CopyComplete
