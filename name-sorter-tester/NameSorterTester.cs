@@ -1,6 +1,7 @@
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
+using System.Linq;
 using name_sorter;
 
 namespace name_sorter_tester
@@ -9,9 +10,9 @@ namespace name_sorter_tester
     public class NameSorterTester
     {
         [TestMethod]
-        public void TestSortByLastName()
+        public void TestAscending()
         {
-            NameSorter nameSorter = new NameSorter(); 
+            INameSorter nameSorter; 
             List<Person> unsortedNamesList = new List<Person>();
             List<Person> sortedNamesList = new List<Person>();
             List<Person> expectedNamesList = new List<Person>();
@@ -24,7 +25,29 @@ namespace name_sorter_tester
             expectedNamesList.Add(new Person {FirstNames = "Beau Tristan", LastName = "Bentley"});
             expectedNamesList.Add(new Person {FirstNames = "Frankie Conner", LastName = "Ritter"});
 
-            sortedNamesList = nameSorter.SortByLastName(unsortedNamesList);
+            nameSorter = new AscendingLastnameSorter();
+            sortedNamesList = nameSorter.SortedNamesList(unsortedNamesList).ToList();
+
+            CollectionAssert.AreEqual(expectedNamesList, sortedNamesList, "The SortByLastName function should be sorted by last name and then first name.");
+        }
+
+        public void TestDescending()
+        {
+            INameSorter nameSorter; 
+            List<Person> unsortedNamesList = new List<Person>();
+            List<Person> sortedNamesList = new List<Person>();
+            List<Person> expectedNamesList = new List<Person>();
+
+            unsortedNamesList.Add(new Person {FirstNames = "Beau Tristan", LastName = "Bentley"});
+            unsortedNamesList.Add(new Person {FirstNames = "Marin", LastName = "Alvarez"});
+            unsortedNamesList.Add(new Person {FirstNames = "Frankie Conner", LastName = "Ritter"});
+
+            expectedNamesList.Add(new Person {FirstNames = "Frankie Conner", LastName = "Ritter"});
+            expectedNamesList.Add(new Person {FirstNames = "Beau Tristan", LastName = "Bentley"});
+            expectedNamesList.Add(new Person {FirstNames = "Marin", LastName = "Alvarez"});
+
+            nameSorter = new DescendingLastnameSorter();
+            sortedNamesList = nameSorter.SortedNamesList(unsortedNamesList).ToList();
 
             CollectionAssert.AreEqual(expectedNamesList, sortedNamesList, "The SortByLastName function should be sorted by last name and then first name.");
         }

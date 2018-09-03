@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace name_sorter
 {
@@ -8,16 +9,16 @@ namespace name_sorter
         static void Main(string[] args)
         {
             //Check if an argument has been entered.
-            if(args.Length == 1)
+            if(args.Length == 2)
             {
                 //Initialise and Set filpaths
                 FileIOHelper file = new FileIOHelper();
-                NameSorter nameSorter = new NameSorter();
+                INameSorter nameSorter;
 
                 List<Person> sortedNamesList = new List<Person>();
                 List<Person> unsortedNamesList = new List<Person>();
 
-                String readPath = args[0];
+                String readPath = args[1];
                 String writePath = "sorted-names-list.txt";
                 
                 //Check if a file does exist
@@ -32,8 +33,22 @@ namespace name_sorter
                             //Process the readed names to the Person class
                             unsortedNamesList = ConvertToListOfPerson(persons);
 
+                            if(args[0] == "-a")
+                            {
+                                nameSorter = new AscendingLastnameSorter();
+                            }
+                            else if(args[0] == "-d")
+                            {
+                                nameSorter = new DescendingLastnameSorter();
+                            }
+                            else
+                            {
+                                PrintUsuage();
+                                return;
+                            }
+
                             //Sort names by a last name firstly and then first names.
-                            sortedNamesList = nameSorter.SortByLastName(unsortedNamesList);                            
+                            sortedNamesList = nameSorter.SortedNamesList(unsortedNamesList).ToList();
 
                             //Print to the screen
                             PrintPersonFromList(sortedNamesList);
@@ -68,8 +83,12 @@ namespace name_sorter
 
         //Display an way how to use this program
         private static void PrintUsuage()
-        {
-            Console.WriteLine("Usage: name_sort [file-path-to-read]");
+        { 
+            Console.WriteLine("Usage: name_sort [option:-a|-d] [file-path-to-read]");
+            Console.WriteLine("");
+            Console.WriteLine("option");
+            Console.WriteLine("-a: ascending sort");            
+            Console.WriteLine("-d: descending sort");            
             Console.WriteLine("");
             Console.WriteLine("file-path-to-read");
             Console.WriteLine("The path to a file to read");            

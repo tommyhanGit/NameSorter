@@ -5748,11 +5748,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Tommy\\Documents\\name-sorter\\name-sorter-tester\\name-sorter-tester.csproj",
+      "projectUniqueName": "C:\\Users\\Tommy\\Documents\\name-sorter\\name-sorter-tester\\name-sorter-tester.csproj",
       "projectName": "name-sorter-tester",
-      "projectPath": "c:\\Users\\Tommy\\Documents\\name-sorter\\name-sorter-tester\\name-sorter-tester.csproj",
+      "projectPath": "C:\\Users\\Tommy\\Documents\\name-sorter\\name-sorter-tester\\name-sorter-tester.csproj",
       "packagesPath": "C:\\Users\\Tommy\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Tommy\\Documents\\name-sorter\\name-sorter-tester\\obj\\",
+      "outputPath": "C:\\Users\\Tommy\\Documents\\name-sorter\\name-sorter-tester\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5769,8 +5769,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "c:\\Users\\Tommy\\Documents\\name-sorter\\name-sorter\\name-sorter.csproj": {
-              "projectPath": "c:\\Users\\Tommy\\Documents\\name-sorter\\name-sorter\\name-sorter.csproj"
+            "C:\\Users\\Tommy\\Documents\\name-sorter\\name-sorter\\name-sorter.csproj": {
+              "projectPath": "C:\\Users\\Tommy\\Documents\\name-sorter\\name-sorter\\name-sorter.csproj"
             }
           }
         }
